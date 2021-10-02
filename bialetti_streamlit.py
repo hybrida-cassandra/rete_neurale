@@ -1,4 +1,4 @@
-pip install -e git://github.com/joblib/joblib.git
+-e git://github.com/joblib/joblib.git
 
 
 import streamlit as st
