@@ -1,4 +1,4 @@
-python setup.py install
+
 
 
 
