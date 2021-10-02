@@ -7,3 +7,4 @@ pandas==1.2.3
 joblib==0.16.0
 scikit-learn==1.0
 python==3.9.7
+-m pip install --upgrade pip'
