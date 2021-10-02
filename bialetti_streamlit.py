@@ -1,4 +1,5 @@
-git://github.com/joblib/joblib.git
+python setup.py install
+
 
 
 import streamlit as st
