@@ -15,7 +15,7 @@ def load_model():
 @st.cache()
 def load_data():
     print('loading data')
-    df = pd.read_csv('/Users/gabriele/PycharmProjects/pythonProject1/Df_Bialetti.csv')
+    df = pd.read_csv('Df_Bialetti.csv')
     return df
 
 
