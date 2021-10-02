@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import seaborn as sns
 from joblib import load
 import plotly.graph_objects as go
 
