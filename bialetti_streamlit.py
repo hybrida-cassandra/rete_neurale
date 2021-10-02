@@ -1,4 +1,4 @@
-pip install seaborn.
+git clone git://github.com/joblib/joblib.git
 pip install joblib
 
 import streamlit as st
