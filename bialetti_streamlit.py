@@ -1,9 +1,9 @@
-git clone git://github.com/joblib/joblib.git
-pip install joblib
+
+
 
 import streamlit as st
 import pandas as pd
-from joblib import load
+
 import plotly.graph_objects as go
 
 
