@@ -1,4 +1,4 @@
--e git://github.com/joblib/joblib.git
+git://github.com/joblib/joblib.git
 
 
 import streamlit as st
