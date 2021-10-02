@@ -1,3 +1,6 @@
+pip install seaborn.
+pip install joblib
+
 import streamlit as st
 import pandas as pd
 from joblib import load
