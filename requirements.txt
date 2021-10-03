@@ -1,3 +1,4 @@
+$ python -m pip list
 numpy==1.20.1
 streamlit==0.84.0
 seaborn==0.11.1
