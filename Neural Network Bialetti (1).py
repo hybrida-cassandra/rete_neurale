@@ -70,7 +70,7 @@ transformers =[
 ]
 
 
-ct = ColumnTransformer(transformers)
+ct = ColumnTransformer(transformers,verbose_feature_names_out=True)
 
 
 steps =[
