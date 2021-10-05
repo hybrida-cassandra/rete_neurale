@@ -1,10 +1,8 @@
-
-
 import streamlit as st
 import pandas as pd
-from joblib import load, dump
+import seaborn as sns
+from joblib import load
 import plotly.graph_objects as go
-
 
 @st.cache(allow_output_mutation=True)
 def load_model():
@@ -15,7 +13,7 @@ def load_model():
 @st.cache()
 def load_data():
     print('loading data')
-    df = pd.read_csv('Df_Bialetti.csv')
+    df = pd.read_csv('/Users/gabriele/PycharmProjects/pythonProject1/Df_Bialetti.csv')
     return df
 
 
@@ -50,8 +48,16 @@ for feat in numerical:
 X = pd.DataFrame([user_input])
 st.write(X)
 
+
+
+z=(X['Spesa Facebook']+X['google'])
+
+cpa= z/model.predict(X)
+
 prediction =model.predict(X)
-st.write(prediction)
+
+st.title('Previsione transazioni')
+
 
 fig= go.Figure(
     go.Indicator(
@@ -61,3 +67,36 @@ fig= go.Figure(
 )
 
 st.plotly_chart(fig)
+st.write(prediction)
+fig_cpa= go.Figure(
+    go.Indicator(
+        mode= 'number',
+        value= cpa[0]
+    )
+)
+st.title('CPA')
+st.plotly_chart(fig_cpa)
+
+aov= 60
+
+fatturato=model.predict(X)*aov
+
+profit=fatturato*0.6-z
+
+
+fig_profit= go.Figure(
+    go.Indicator(
+        mode= 'number',
+        value= profit[0]
+    )
+)
+st.subheader('Profit')
+st.plotly_chart(fig_profit)
+
+
+
+
+
+
+
+
