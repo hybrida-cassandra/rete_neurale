@@ -20,7 +20,7 @@ def load_data():
 model = load_model()
 df = load_data()
 st.write(model)
-st.title('Cassandra - Bialetti ')
+st.title('Welcome to Cassandra')
 
 
 user_input= {}
