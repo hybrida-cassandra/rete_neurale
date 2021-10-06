@@ -22,7 +22,7 @@ from sklearn.inspection import permutation_importance, plot_partial_dependence
 # In[15]:
 
 
-df = pd.read_csv('/Users/gabriele/Downloads/Dataset attribuzioni Bialetti - Overall.csv')
+df = pd.read_csv('Df_Bialetti.csv')
 df.head()
 
 
