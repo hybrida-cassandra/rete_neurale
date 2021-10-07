@@ -19,7 +19,7 @@ def load_data():
 
 model = load_model()
 df = load_data()
-st.write(model)
+
 st.title('Welcome to Cassandra')
 
 
