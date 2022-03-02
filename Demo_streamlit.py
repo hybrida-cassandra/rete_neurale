@@ -5,6 +5,8 @@ from joblib import load
 import plotly.graph_objects as go
 from PIL import Image
 
+st.set_page_config(page_title='Cassandra - Scenario Simulator')
+
 @st.cache(allow_output_mutation=True)
 def load_model():
     print('Loading model...')
@@ -20,6 +22,7 @@ def load_data():
 
 model = load_model()
 df = load_data()
+
 
 st.title('Cassandra - Scenario Simulator')
 
